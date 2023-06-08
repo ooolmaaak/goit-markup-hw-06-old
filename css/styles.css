@@ -785,3 +785,8 @@ textarea {
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
 }
+
+.modal-field {
+  display: flex;
+  position: relative;
+}
