@@ -938,6 +938,10 @@ input {
   margin-right: 8px;
 }
 
+.modal-check:focus + .check-text .custom-checkbox {
+  border-color: rgba(46, 47, 66, 0.4);
+}
+
 .modal-check:checked + .check-text .custom-checkbox {
   background-color: var(--color-blue);
   border: none;
