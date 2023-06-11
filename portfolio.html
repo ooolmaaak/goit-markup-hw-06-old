@@ -29,10 +29,12 @@
           >
           <ul class="nav-list list">
             <li class="nav-item">
-              <a class="nav-link  link" href="./index.html">Studio</a>
+              <a class="nav-link link" href="./index.html">Studio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link link current" href="./portfolio.html">Portfolio</a>
+              <a class="nav-link link current" href="./portfolio.html"
+                >Portfolio</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link link" href="">Contacts</a>
@@ -306,7 +308,7 @@
           </p>
         </div>
         <div class="footer-social-media">
-          <p class="footer-social-subtitle">Social media</p>
+          <p class="footer-subtitle">Social media</p>
           <ul class="footer-social-list list">
             <li class="social-media-item">
               <a
@@ -353,6 +355,30 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="footer-form-container">
+          <p class="footer-subtitle">Subscribe</p>
+          <form
+            class="footer-form"
+            name="footer_email_form"
+            autocomplete="on"
+            novalidate
+          >
+            <label for="footer-email" class="footer-input-label">
+              <input
+                class="footer-form-input"
+                type="email"
+                name="footer-email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="submit" class="footer-form-button">
+              Subscribe
+              <svg class="button-svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
