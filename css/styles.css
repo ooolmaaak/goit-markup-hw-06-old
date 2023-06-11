@@ -709,15 +709,6 @@ img {
 
 /* FORM */
 
-label {
-  display: flex;
-  flex-direction: column;
-  padding: 8px;
-}
-
-.form-heading {
-}
-
 /* .main-form {
   margin-top: 72px;
 } */
@@ -760,21 +751,93 @@ label {
   margin-bottom: 16px;
 }
 
-.form-input {
+/* .form-input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
 }
 
-textarea {
+.form-input:focus {
+  border: 1px solid rgba(14, 26, 247, 0.4);
+} */
+
+.form-input {
+  width: 100%;
+  height: 45px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 5px;
+  padding-left: 30px;
+  font-size: 14px;
+  color: rgb(12, 12, 12);
+  outline: transparent;
+}
+
+.form-input:focus {
+  border-color: rgba(14, 26, 247, 0.4);
+}
+
+.modal-comment {
   width: 100%;
   resize: none;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  margin-top: 4px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
 }
 
-::placeholder {
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  color: #8e8f99;
+}
+
+.check-text {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.check-text span {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+.privacy-link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  color: #4d5ae5;
+}
+
+input {
+  margin-top: 4px;
+}
+
+.modal-comment::placeholder {
   padding-top: 8px;
   padding-left: 16px;
   font-family: "Roboto", sans-serif;
@@ -787,6 +850,36 @@ textarea {
 }
 
 .modal-field {
+  position: relative;
+}
+
+.check-text span {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+.modal-check:checked + .check-text span {
+  background-color: #404bbf;
+  border: none;
+}
+
+.modal-check:focus + .check-text span {
+  border-color: rgba(46, 47, 66, 0.4);
+}
+
+.modal-icon {
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-wrap {
   position: relative;
 }
